@@ -1,0 +1,13 @@
+table_name,column_name,column_type,column_description
+persons,pid,varchar,Unique id for a GC account holder. Primary key.
+persons,person_created_ts,timestamp,The timestamp when the person created a GC account
+persons,last_login_ts,timestamp,The timestamp when the person last logged on to their GC account
+persons,subscription_start_ts,timestamp,The timestamp when the person first subscribed
+persons,subscription_end_ts,timestamp,"The timestamp when the person stopped subscribing. If NULL, they are still subscribed."
+person_team_association,pid,varchar,Unique id for a GC account holder
+person_team_association,tid,varchar,Unique id for a GC team
+teams,tid,varchar,Unique id for a GC team. Primary key
+teams,age_group,varchar,"Categorical age group of the team (Under 13, Between 13 - 18, Over 13"
+teams,competition_level,varchar,"Categorical competition level of the team (school, recreational, club_travel) "
+teams,n_games_scored,integer,Total number of games scored on the GC app by the team
+teams,last_game_scored_ts,timestamp,Timestamp of the most recently scored game
