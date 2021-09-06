@@ -84,13 +84,13 @@ To make sure your development setup wont cause issues, we have provided the `can
 
 
 1. What ways can this be improved for a production environment?
-  a.) In production we should check if the files are present in the right directory / if the files have 0 bytes / are the files in the expected 
+  - a.) In production we should check if the files are present in the right directory / if the files have 0 bytes / are the files in the expected 
   format before running the job 
-  b.) Also we should check if the database is up and running before starting the loading job 
-  c.) Unit test cases should also be included as part of the build 
+  - b.) Also we should check if the database is up and running before starting the loading job 
+  - c.) Unit test cases should also be included as part of the build 
 
 2. How does your solution scale?
-  a.) if the data volume gets huge a bulk loader should be used 
-  b.) To scale the solution horizontally parallel computation framework like Apache spark should be used if there are 
+  - a.) if the data volume gets huge a bulk loader should be used 
+  - b.) To scale the solution horizontally parallel computation framework like Apache spark should be used if there are 
   transformations involved 
-  c.) increasing the hardware components like memory sizes 
+  - c.) increasing the hardware components like memory sizes 
